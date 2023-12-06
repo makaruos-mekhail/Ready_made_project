@@ -6,10 +6,10 @@ import { ContactusComponent } from './page/contactus/contactus.component';
 import { AboutusComponent } from './page/aboutus/aboutus.component';
 
 const routes: Routes = [
-  { path: 'contact-us', component: ContactusComponent },
-  { path: 'about-us', component: AboutusComponent },
-  { path: 'home', component: HomeComponent },
   { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: 'home', component: HomeComponent },
+  { path: 'about-us', component: AboutusComponent },
+  { path: 'contact-us', component: ContactusComponent },
 ];
 
 // @NgModule({

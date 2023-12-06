@@ -7,6 +7,7 @@ import { AboutusComponent } from './page/aboutus/aboutus.component';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { TranslateModule } from '@ngx-translate/core';
 import { ReactiveFormsModule } from '@angular/forms';
+import { AnimateOnScrollModule } from 'primeng/animateonscroll';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     HomeRoutingModule,
     SharedModule,
     TranslateModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    AnimateOnScrollModule
   ]
 })
 export class HomeModule { }
