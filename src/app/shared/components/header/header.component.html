@@ -1,3 +1,8 @@
 <div  class="bg-primary mb-0">header works!
-
+    <button class="btn button1" type="button">
+        <img (click)="switchLanguage('ar') " *ngIf="lang === 'en'" src="assets/image/Lang/Ellipse3.svg" alt=""
+          style="width: 35px;border:1px solid rgb(163, 163, 163);border-radius: 50%;">
+        <img (click)="switchLanguage('en') " *ngIf="lang === 'ar'" src="assets/image/Lang/Ellipse5.svg" alt=""
+          style="width: 35px;border:1px solid rgb(163, 163, 163);border-radius: 50%;">
+      </button>
 </div>

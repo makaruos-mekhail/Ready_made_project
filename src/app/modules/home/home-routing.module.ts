@@ -12,12 +12,6 @@ const routes: Routes = [
   { path: 'contact-us', component: ContactusComponent },
 ];
 
-// @NgModule({
-//   declarations: [],
-//   imports: [
-//     CommonModule
-//   ]
-// })
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],

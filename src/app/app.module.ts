@@ -1,14 +1,9 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SharedModule } from './shared/shared.module';
-// import { HomeRoutingModule } from './modules/home/home-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
-
-import { CoreModule } from './core/core.module';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { LocationStrategy, HashLocationStrategy } from '@angular/common';
@@ -28,12 +23,10 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    CoreModule,
     NgbModule,
     NgbCarouselModule,
     SharedModule,
     BrowserAnimationsModule,
-    // HomeRoutingModule
     TranslateModule.forRoot({
       loader: {
           provide: TranslateLoader,
