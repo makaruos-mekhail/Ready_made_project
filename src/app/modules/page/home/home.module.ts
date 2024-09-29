@@ -14,7 +14,10 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  declarations: [],
+  declarations: [
+    HomeComponent, //appAnimate ضرورى هنا
+
+  ],
   imports: [
     CommonModule,
     HomeRoutingModule,
