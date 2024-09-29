@@ -1,0 +1,39 @@
+// @import "../../../../assets/style/main.scss"; 
+
+/* تعريف الأنيميشن بشكل عالمي */
+.show_opacity {
+  animation: myAnimScaleUpCenter 1.5s ease 0s 1 normal forwards !important;
+  transition: opacity 1.5s ease-in-out;
+  opacity: 1;
+}
+
+.hide_opacity {
+  animation: myAnimScaleDownCenter 1.5s ease 0s 1 normal forwards !important;
+  transition: opacity 1.5s ease-in-out;
+  opacity: 0;
+}
+
+/* تعريف keyframes للأنيميشن */
+@keyframes myAnimScaleUpCenter {
+  from {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes myAnimScaleDownCenter {
+  from {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  to {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+}

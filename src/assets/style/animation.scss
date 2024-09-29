@@ -1,0 +1,42 @@
+// Scale Up Center
+@keyframes myAnimScaleUpCenter {
+    0% {
+      transform: scale(0.5);
+    }
+  
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  // Scale down Center
+  @keyframes myAnimScaleDownCenter {
+    0% {
+      transform: scale(1);
+    }
+  
+    100% {
+      transform: scale(0.5);
+    }
+  }
+  
+  // Scale Up Vertical-Center
+  @keyframes myAnimVerticalCenterUp {
+      0% {
+          transform: scaleY(0.4);
+      }
+  
+      100% {
+          transform: scaleY(1);
+      }
+  }
+  
+  @keyframes myAnimVerticalCenterdown {
+      0% {
+          transform: scaleY(1);
+      }
+  
+      100% {
+          transform: scaleY(0.4);
+      }
+  }

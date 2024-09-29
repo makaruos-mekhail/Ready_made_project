@@ -1,24 +1,28 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+
 import { HomeRoutingModule } from './home-routing.module';
-import { HomeComponent } from './page/home/home.component';
-import { ContactusComponent } from './page/contactus/contactus.component';
-import { AboutusComponent } from './page/aboutus/aboutus.component';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { TranslateModule } from '@ngx-translate/core';
 import { ReactiveFormsModule } from '@angular/forms';
-import { AnimateOnScrollModule } from 'primeng/animateonscroll';
+// import { AnimateOnScrollModule } from 'primeng/animateonscroll';
+import { RouterModule, Routes } from '@angular/router';
+import { HomeComponent } from './home.component';
 
+const routes: Routes = [
+  { path: '', component: HomeComponent }
+];
 
 @NgModule({
-  declarations: [HomeComponent,ContactusComponent,AboutusComponent],
+  declarations: [],
   imports: [
     CommonModule,
     HomeRoutingModule,
+    RouterModule.forChild(routes),
     SharedModule,
     TranslateModule,
     ReactiveFormsModule,
-    AnimateOnScrollModule
+    // AnimateOnScrollModule,
   ]
 })
 export class HomeModule { }

@@ -10,7 +10,7 @@ import { TranslateModule } from '@ngx-translate/core';
 
 
 @NgModule({
-  declarations: [FooterComponent,HeaderComponent,ScreenLoadarComponent],
+  declarations: [FooterComponent, HeaderComponent, ScreenLoadarComponent],
   imports: [
     CommonModule,
     RouterModule,
@@ -19,7 +19,7 @@ import { TranslateModule } from '@ngx-translate/core';
   exports: [
     HeaderComponent,
     FooterComponent,
-    ScreenLoadarComponent
+    ScreenLoadarComponent,
   ],
 })
 export class SharedModule { }
